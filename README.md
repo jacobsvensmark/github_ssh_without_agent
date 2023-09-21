@@ -36,5 +36,5 @@ sshCommand = "ssh -F <path/to/ssh/config/file>"
 9. Use git push like usual
 
 ```
-git push origin master
+git push origin main
 ```
