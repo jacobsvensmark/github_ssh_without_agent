@@ -15,23 +15,25 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 ```
 git remote add origin git@github.com:<username>/<repo>.git
 ```
+6. To verify, use
+```
+git remote -v
+```
 
-use `git remote -v` to verify
-
-6. Edit your SSH config-file `~/.ssh/config` (windows `C:\Users\<username>\.ssh\config`) and add a Host
+7. Edit your SSH config-file `~/.ssh/config` (windows `C:\Users\<username>\.ssh\config`) and add a Host
 
 ```
 Host github.com
   IdentityFile /my/individual/path/id_rsa
 ```
 
-7. Edit the git projects config-file `.git\config` and add in [core]
+8. Edit the git projects config-file `.git\config` and add in [core]
 
 ```
 sshCommand = "ssh -F <path/to/ssh/config/file>"
 ```
 
-8. Use git push like usual
+9. Use git push like usual
 
 ```
 git push origin master
