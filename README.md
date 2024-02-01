@@ -4,6 +4,11 @@
 ```
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 ```
+or probably just do
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+give key a name and password, and move files to `~/.ssh/.` Then add the `.pub` contents to a new SSH key through github.com in a browser.
 2. This assumes a git repository exists, otherwise create one as usual `git init`
 
 3. Create a Repository on GitHub
