@@ -32,8 +32,13 @@ Host github.com
 ```
 sshCommand = "ssh -F <path/to/ssh/config/file>"
 ```
+9. Make sure that your github url is of the form
+```
+[remote "origin"]
+       url = git@github.com:<username>/<reponame>.git
+```
 
-9. Use git push like usual
+10. Use git push like usual
 
 ```
 git push origin main
